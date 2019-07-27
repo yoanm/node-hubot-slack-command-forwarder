@@ -29,7 +29,6 @@ module.exports = async (reqBody, robot) => {
 
     // Fetch user
     const user = robot.brain.userForId(userId);
-    console.log({user});
     user.room = channel;
 
     return new SlackCommandMessage(

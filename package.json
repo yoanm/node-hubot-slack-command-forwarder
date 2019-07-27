@@ -1,7 +1,7 @@
 {
   "name": "hubot-slack-command-forwarder",
   "description": "Hubot script to manage slack command forwarding to hubot",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "author": "Yoanm <yoanm@users.noreply.github.com>",
   "license": "MIT",
   "keywords": [
@@ -22,7 +22,7 @@
     "hubot": "2.x"
   },
   "devDependencies": {
-    "@slack/client": "^3.0.0",
+    "@slack/client": "^5.0.1",
     "hubot-test-helper": "^1.3.0",
     "chai": "^2.1.1",
     "coffee-script": "1.6.3",

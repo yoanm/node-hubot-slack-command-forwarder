@@ -25,10 +25,11 @@ module.exports = (slackWebClient, commandMessage, robot) => {
         text: infoText,
         //ts: (Date.now()/1000)
       }
-    ]
+    ],
+    channel: commandMessage.getChannel()
   };
 
-  return slackWebClient.chat.postMessage(commandMessage.getChannel(), '', messageOptions)
+  return slackWebClient.chat.postMessage(messageOptions)
       .then(res => {
         if (res.ok) {
           return res.ts;
