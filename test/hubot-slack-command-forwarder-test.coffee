@@ -1,9 +1,10 @@
 Helper = require('hubot-test-helper')
+process.env.SLACK_APP_TOKEN = 'FAKE_SLACK_APP_TOKEN';
 chai = require 'chai'
 
 expect = chai.expect
 
-helper = new Helper('../src/hubot-slack-command-forwarder.coffee')
+helper = new Helper('../index.coffee')
 
 describe 'hubot-slack-command-forwarder', ->
   beforeEach ->
