@@ -19,9 +19,9 @@ class SlackCommandMessage extends TextMessage
     # @param {string}       id
     ###
     constructor: (@command, @channel, user, @text, isFromBotChat, isRootBotCommand, id = undefined) ->
+        super user, text, id;
         @_isFromBotChat = isFromBotChat
         @_isRootBotCommand = isRootBotCommand;
-        super user, text, id;
 
     getUser: () ->
         return @user
