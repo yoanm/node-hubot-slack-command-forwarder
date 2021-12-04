@@ -6,6 +6,7 @@ const postCommandTranslatingMessage = require('./post-command-translating-messag
 
 /**
  * @param {Robot} robot
+ * @param {string} webApiToken
  *
  * @returns {function(req): Promise<undefined|Error>}
  */
